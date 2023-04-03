@@ -6,54 +6,74 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-    </head>
-    <style>
-        #jumbo{
-            width: 100%;
-            height: 400px;
-            background-image: url("fashion_shopping.jpg");
-        }
-        li:hover{
-            background-color:lightgrey;
-        }
-        .card{
-          text-align: center;
-          margin:auto;
-        }
-        .col-sm-4{
+    
+      <style>
+          #jumbo{
+              width: 100%;
+              height: 400px;
+              background-image: url("fashion_shopping.jpg");
+          }
+          li:hover{
+              background-color:lightgrey;
+          }
+          .card{
             text-align: center;
-            font-size: 18pt;
-            }
-
-            #footer{
-              font-size: 10pt;
-              font-style: italic;
-            }
-
-            /* change navbar background color when width is 1000px or more*/
-            @media (min-width: 1000px) {
-              .navbar {
-              background-color: lightseagreen;
+            margin:auto;
+          }
+          .item1{
+              text-align: center;
+              font-size: 18pt;
               
               }
 
-            /* change navbar background color when width is 600px or less*/
-            }
-            @media (max-width: 600px) {
-              .navbar {
-              background-color: lightpink;
-              
+              #footer{
+                font-size: 10pt;
+                font-style: italic;
               }
-            }
-            
-    </style>
+
+
+              .container1{
+                display:grid;
+                grid-template-columns:100%;
+                gap: 10px;
+              }
+             
+
+
+              /* change navbar background color when width is 1000px or more*/
+              @media (min-width: 1000px) {
+                .navbar {
+                background-color: lightseagreen;
+                
+                }
+
+              /* change navbar background color when width is 600px or less*/
+              }
+              @media (max-width: 600px) {
+                .navbar {
+                background-color: lightpink;
+                
+                }
+              }
+
+              /*make 3 grid columns when width is 400px or more, otherwise, default is one column per .container1 class*/
+              @media (min-width: 400px) {
+                .container1{
+                  grid-template-columns:auto auto auto;
+                
+
+                }
+              }
+              
+      </style>
+    </head>
     <body>
         
            <!-- Jumbotron-->
             <div class="jumbotron text-center" style="margin-bottom:0" id="jumbo"></div> 
 
            <!-- Navigation Bar-->     
-           <nav class="navbar navbar-default">
+          <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header">
                 <a class="navbar-brand" href="#">WebSiteName</a>
@@ -69,10 +89,10 @@
 
 
           <!-- Grid System-->
-          <div class="container">
-            <div class="row">
-            <div class="col-sm-4"><b>Shoes</b><br><br>
-            <!-- Cards-->
+          <div class="container1">
+           
+            <div class="item1"><b>Shoes</b><br><br>
+              <!-- Cards-->
 
               <div class="card" style="width: 18rem;">
                 <img src="./images/products/shoes/shoe1.jpg" class="card-img-top" alt="shoe1" width="100px">
@@ -94,10 +114,11 @@
                   <p class="card-text">Shoe 3<br><b>$199.99</b></p>
                 </div>
               </div>
+
             </div>
 
-            <div class="col-sm-4"><b>Purses</b><br><br>
-            <!-- Cards-->
+            <div class="item1"><b>Purses</b><br><br>
+              <!-- Cards-->
               <div class="card" style="width: 18rem;">
                 <img src="./images/products/purses/purse1.jpg" class="card-img-top" alt="purse1" width="100px">
                 <div class="card-body">
@@ -120,7 +141,7 @@
               </div>
             </div>
 
-            <div class="col-sm-4"><b>Hats</b><br><br>
+            <div class="item1"><b>Hats</b><br><br>
              <!-- Cards-->
               <div class="card" style="width: 18rem;">
                 <img src="./images/products/hats/hat1.jpg" class="card-img-top" alt="hat1" width="100px">
@@ -142,10 +163,11 @@
                   <p class="card-text">Hat 3<br><b>$144.99</b></p>
                 </div>
               </div>
+
             </div>
 
           </div>
-        </div>
+        
 
           <!--Footer-->
 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopping Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    </head>
+    <style>
+        #jumbo{
+            width: 100%;
+            height: 400px;
+            background-image: url("fashion_shopping.jpg");
+        }
+        li:hover{
+            background-color:lightgrey;
+        }
+        .card{
+          text-align: center;
+          margin:auto;
+        }
+        .col-sm-4{
+            text-align: center;
+            font-size: 18pt;
+            }
+
+            #footer{
+              font-size: 10pt;
+              font-style: italic;
+            }
+
+            /* change navbar background color when width is 1000px or more*/
+            @media (min-width: 1000px) {
+              .navbar {
+              background-color: lightseagreen;
+              
+              }
+
+            /* change navbar background color when width is 600px or less*/
+            }
+            @media (max-width: 600px) {
+              .navbar {
+              background-color: lightpink;
+              
+              }
+            }
+            
+    </style>
+    <body>
+        
+           <!-- Jumbotron-->
+            <div class="jumbotron text-center" style="margin-bottom:0" id="jumbo"></div> 
+
+           <!-- Navigation Bar-->     
+           <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+              </div>
+              <ul class="nav navbar-nav" id="list1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+          <!-- Grid System-->
+          <div class="container">
+            <div class="row">
+            <div class="col-sm-4"><b>Shoes</b><br><br>
+            <!-- Cards-->
+
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/shoes/shoe1.jpg" class="card-img-top" alt="shoe1" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Shoe 1<br><b>$99.99</b></p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/shoes/shoe2.jpg" class="card-img-top" alt="shoe2" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Shoe 2<br><b>$149.99</b></p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/shoes/shoe3.jpg" class="card-img-top" alt="shoe3" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Shoe 3<br><b>$199.99</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4"><b>Purses</b><br><br>
+            <!-- Cards-->
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/purses/purse1.jpg" class="card-img-top" alt="purse1" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Purse 1<br><b>$89.99</b></p>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/purses/purse2.jpg" class="card-img-top" alt="purse2" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Purse 2<br><b>$119.99</b></p>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/purses/purse3.jpg" class="card-img-top" alt="purse3" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Purse 3<br><b>$174.99</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4"><b>Hats</b><br><br>
+             <!-- Cards-->
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/hats/hat1.jpg" class="card-img-top" alt="hat1" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Hat 1<br><b>$104.99</b></p>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/hats/hat2.jpg" class="card-img-top" alt="hat2" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Hat 2<br><b>$124.99</b></p>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 18rem;">
+                <img src="./images/products/hats/hat3.jpg" class="card-img-top" alt="hat3" width="100px">
+                <div class="card-body">
+                  <p class="card-text">Hat 3<br><b>$144.99</b></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+          <!--Footer-->
+
+          <div class="jumbotron text-center" style="margin-bottom:0;" >
+          <p id="footer">Website Design Services 2023</p>
+          </div>
+
+          
+
+         
+
+       
+    </body>
+</html>
